@@ -1,0 +1,33 @@
+body{
+    
+    background-image: url(https://cdn.motor1.com/images/mgl/mrz1e/s1/coolest-cars-feature.webp) ;
+
+}
+.main{
+
+
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    
+
+}
+
+.sekil{
+    position: relative;
+    
+    
+}
+.sekil img{
+    width: 40%;
+    
+    
+}
+.metn{
+    position: relative;
+    bottom: 40px;
+    color: white;
+}
