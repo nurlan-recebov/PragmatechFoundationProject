@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#What I {
+    height: 650px;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -242,4 +250,64 @@ body {
 
 .movcud {
     display: flex;
+    margin-top: 5%;
+}
+
+.movcud h2 {
+    color: white;
+}
+
+.qutu1 {
+    color: white;
+    background-color: tomato;
+    width: 100px;
+    margin-left: 210px;
+    border-radius: 5px;
+}
+
+.movcud h3 {
+    color: turquoise;
+}
+
+.movcud .p {
+    color: rgba(255, 255, 255, .5)!important;
+    font-family: "Poppins", sans-serif;
+}
+
+.qutu {
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.button1 button {
+    border-radius: 30px;
+    background-color: none;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 2px solid #495057;
+    cursor: grab;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button1 a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.button1 p {
+    background: none;
+    color: turquoise;
+    border: none;
+    text-decoration: none;
+    background-color: none;
+    font-family: "Poppins", sans-serif;
 }
