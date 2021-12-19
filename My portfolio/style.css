@@ -120,7 +120,7 @@ html {
     width: 100%;
     height: 100%;
     border: 1px solid black;
-    background-color: #212529;
+    background-color: #495057;
     margin-left: 250px;
     width: calc(100% - 250px);
     text-align: center;
@@ -284,18 +284,201 @@ html {
     text-align: center;
 }
 
+
+/* section portfolio */
+
+.photo ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+.photo {
+    margin-top: 50px;
+}
+
+.photo li:nth-child(1) {
+    border-bottom: 2px solid turquoise;
+}
+
+.resim img {
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
+}
+
+.resim {
+    display: flex;
+}
+
+.clents {
+    display: flex;
+    margin-top: 40px;
+}
+
+.cle1 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.cle1 img {
+    border-radius: 55%;
+    margin-left: 20px;
+    width: 20%;
+    height: 20%;
+}
+
+.cle1 h2 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin-left: 10px;
+}
+
+.cle1 h3 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, .5)!important;
+    margin-left: 10px;
+}
+
+.clents p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 270px;
+    margin-left: 50px;
+}
+
+.stars ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 90px;
+}
+
+.stars ul li i {
+    color: yellow;
+}
+
+.ha {
+    background-color: blueviolet;
+    margin-top: 20px;
+}
+
+.ha1 {
+    margin-top: 20px;
+    background-color: green;
+    margin-left: 40px;
+}
+
+.adress {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.nomre {
+    display: flex;
+    margin-left: 80px;
+}
+
+.mail {
+    display: flex;
+    margin-left: 80px;
+}
+
+.nomre i {
+    color: turquoise;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.mail i {
+    color: turquoise;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.nomre h4 {
+    margin-left: 20px;
+    color: white;
+}
+
+.mail h4 {
+    margin-left: 20px;
+    color: white;
+}
+
+.Fol h2 {
+    color: white;
+}
+
+.Fol i {
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.Tam {}
+
+.complete {
+    display: flex;
+    margin-top: 100px;
+}
+
+.send h2 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.soninput {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.soninput input {
+    background: none;
+    border: none;
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background-color: #212529;
+}
+
+.textarea textarea {
+    font-family: "Poppins", sans-serif;
+    background-color: #212529;
+    border: none;
+    margin-left: 25px;
+}
+
 .button1 button {
     border-radius: 30px;
-    background-color: none;
+    background-color: turquoise;
     width: 150px;
     height: 50px;
-    background: none;
-    border: 2px solid #495057;
+    border: 1px solid #495057;
     cursor: grab;
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .button1 a {
@@ -305,9 +488,32 @@ html {
 
 .button1 p {
     background: none;
-    color: turquoise;
+    color: white;
     border: none;
     text-decoration: none;
     background-color: none;
     font-family: "Poppins", sans-serif;
+}
+
+.endd {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: #212529;
+    height: 50px;
+}
+
+.end1 {
+    display: flex;
+    margin-top: 25px;
+}
+
+.Nurlan {
+    color: turquoise;
+}
+
+.end2 {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
 }
