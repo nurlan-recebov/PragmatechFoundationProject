@@ -12,13 +12,13 @@ html {
 
 .container {
     display: flex;
-    width: 100%;
+    width: calc(100%-250px);
 }
 
 .right {
     width: 250px;
     height: 100vh;
-    background-color: black;
+    background-color: #111418;
     flex-direction: column;
     margin: auto;
     text-align: center;
@@ -116,8 +116,13 @@ html {
 
 /*  ikinci section  start*/
 
+#About-Me {
+    width: calc(100%-250px);
+    height: 700px;
+}
+
 .container1 {
-    width: 100%;
+    width: calc(100%-250px);
     height: 100%;
     border: 1px solid black;
     background-color: #212529;
@@ -205,7 +210,7 @@ html {
     outline: none;
     border: none;
     border-radius: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     text-decoration: none;
     list-style-type: none;
     border-bottom: none;
@@ -225,6 +230,32 @@ html {
 
 
 /* section 3 start */
+
+#WhatIdo {
+    height: 880px;
+    width: calc(100%-250px);
+    background-color: #343a40 !important;
+}
+
+#Resume {
+    height: 1100px;
+    width: calc(100%-250px);
+}
+
+#Portfolio {
+    width: calc(100%-250px);
+    height: 1300px;
+}
+
+#Testimonial {
+    width: calc(100%-250px);
+    height: 800px;
+}
+
+#Contact {
+    width: calc(100%-250px);
+    height: 780px;
+}
 
 .tam {
     display: flex;
@@ -378,6 +409,8 @@ html {
     margin-left: 150px;
 }
 
+.clients {}
+
 .stars ul li i {
     color: yellow;
 }
@@ -385,40 +418,51 @@ html {
 .ha {
     background-color: blueviolet;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 .ha1 {
     margin-top: 20px;
     background-color: green;
     margin-left: 40px;
+    margin-right: 30px;
 }
 
 .adress {
     color: white;
     font-family: "Poppins", sans-serif;
+    margin-left: -90px;
+}
+
+.adress h2 {
+    margin-left: -130px;
 }
 
 .nomre {
     display: flex;
-    margin-left: 80px;
 }
 
 .mail {
     display: flex;
-    margin-left: 80px;
+}
+
+.Tam {
+    width: 300px;
+    height: 100%;
+    margin-left: 30px;
 }
 
 .nomre i {
     color: turquoise;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
 .mail i {
     color: turquoise;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -444,7 +488,15 @@ html {
     text-decoration: none;
 }
 
-.Tam {}
+.Fol ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.Fol {
+    margin-left: -150px;
+}
 
 .complete {
     display: flex;
@@ -464,19 +516,23 @@ html {
 .soninput input {
     background: none;
     border: none;
-    width: 300px;
+    width: 290px;
     height: 40px;
-    margin-left: 30px;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     background-color: #202020;
+    margin-right: 20px;
+    padding-left: 20px;
 }
 
 .textarea textarea {
     font-family: "Poppins", sans-serif;
     background-color: #202020;
     border: none;
-    margin-left: 25px;
+    margin-left: 0px;
+    width: 610px;
+    height: 150px;
+    padding: 20px 20px;
 }
 
 .button1 button {
@@ -489,7 +545,7 @@ html {
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .button1 a {
@@ -506,17 +562,22 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
+#end {
+    height: 120px;
+    width: calc(100%-250px);
+    background-color: #111418 !important;
+}
+
 .endd {
     display: flex;
     justify-content: space-between;
     color: white;
-    background: #212529;
-    height: 50px;
+    margin-top: 60px;
 }
 
 .end1 {
     display: flex;
-    margin-top: 25px;
+    margin-left: 40px;
 }
 
 .Nurlan {
@@ -526,5 +587,5 @@ html {
 .end2 {
     display: flex;
     font-family: "Poppins", sans-serif;
-    margin-top: 25px;
+    margin-right: 40px;
 }
