@@ -1,8 +1,14 @@
-function numbertostring(x=string ,_default=String){
-    console.log(x);
-    return String(x);
+function numbertostring(n){
+    // n=String(n)
+    console.log(typeof n+ ":" +n);
+    
+    
 }
-numbertostring(678)
+numbertostring(5)
+
+
+
+
 function numberincrease(x=number , _default=Number){
     console.log(x=x+1);
     return(x=x+1);
@@ -20,6 +26,7 @@ function add(x,y){
 add(12,13)
 function subtract(x,y){
     console.log(x-y);
+
     return(x-y)
 
 }
