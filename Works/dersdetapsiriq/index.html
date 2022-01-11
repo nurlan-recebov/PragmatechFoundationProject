@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.btn button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin: 20px;
+    background-color: gray;
+    position: relative;
+
+}
+.btn{
+    display: flex;
+    
+}
+.qutu{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+transition: all .5s ease;
+    position: absolute;
+    left: 0px;
+}
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <div id="myBtn" class="a" onclick=""><button></button></div>
+        <div id="buttonleft" class="b" onclick=""><button></button></div>
+
+
+    </div>
+    <div id="myqutu" class="qutu"></div>
+    <script>
+        
+          document.getElementById("buttonleft").onclick =function(){
+            document.getElementById("myqutu").style.left='0px';
+
+          }
+          document.getElementById("myBtn").onclick=function(){
+              document.getElementById("myqutu").style.left=window.innerWidth-myqutu.clientWidth+"px"
+          }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+body{
+    background-color: blueviolet;
+}
+.input1 .birinci{
+    width: 200px;
+    height: 100px;
+}
+
+.contain{
+    text-align: center;
+    background-color: yellow;
+    border: 2px solid yellowgreen;
+    margin-top: 200px;
+    
+    
+}

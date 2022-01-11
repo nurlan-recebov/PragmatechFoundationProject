@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .like{
+  width:30px;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  border:1px solid red;
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+#mybutton{
+    width:100px ;
+    height: 100px;
+}
+    </style>
+</head>
+<body>
+    <button class="like" id="mybutton" onclick="sayArtir()">1</button>
+
+<script>
+ 
+let like=document.querySelector(".like")
+let i=0
+function sayArtir(){
+    like.innerHTML=i
+    i++
+}
+</script>
+    
+</body>
+</html>
+
+
+

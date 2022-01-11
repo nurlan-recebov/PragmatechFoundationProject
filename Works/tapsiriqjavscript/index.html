@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.dropbtn{
+width: 500px;
+height: 30px;
+background-color: gray;
+display: grid;
+position: relative;
+
+    
+}
+
+.dropdown-content{
+    display: none;
+  position: absolute;
+}
+.show {display:block;}
+
+    </style>
+</head>
+<body>
+    <div class="qutu">
+        <button id="myBtn"class="dropbtn">Section1</button>
+        <button id="myBtniki"class="dropbtn" >Section2</button>
+        <button id="myBtnuc"class="dropbtn" > Section3</button>
+        <div id="myDropdown" class="dropdown-content">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus illum ipsam odit libero sapiente corrupti rerum maxime explicabo aliquam quisquam fuga repellendus doloremque ea vel sit perspiciatis, similique laborum eos.</p>
+          </div>
+    </div>
+
+    <script>
+        // Get the button, and when the user clicks on it, execute myFunction
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+        document.getElementById("myBtniki").onclick = function() {myFunction()};
+        document.getElementById("myBtnuc").onclick = function() {myFunction()};
+        /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+        </script>
+</body>
+</html>

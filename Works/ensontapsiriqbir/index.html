@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+  padding:0px;
+  margin:40px;
+  list-style:none
+}
+li{
+  padding:10px 20px;
+  border:1px solid gray;
+  border-bottom:none;
+  transition:all .5s ease;
+}
+li:last-child{
+   border-bottom:1px solid gray;
+  border-radius:0px 0px 10px 10px;
+}
+li:first-child{
+
+  border-radius:10px 10px 0px 0px;
+}
+li:hover{
+  background:lightgray
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li onclick="this.style.display=`none`">Lorem ipsum dolor sit amet 01</li>
+        <li id="nested">Lorem ipsum dolor sit amet 02</li>
+        <li onclick="this.style.display=`none`">Lorem ipsum dolor sit amet 03</li>
+        <li onclick="this.style.display=`none`">Lorem ipsum dolor sit amet 04</li>
+        <li onclick="this.style.display=`none`">Lorem ipsum dolor sit amet 05</li>
+        <li onclick="this.style.display=`none`">Lorem ipsum dolor sit amet 06</li>
+      </ul>
+      <script>
+          document.getElementById('nested').onclick=function(){
+          let node = document.getElementById("nested");
+if (node.parentNode) {
+  node.parentNode.removeChild(node);
+}
+}
+      </script>
+</body>
+</html>

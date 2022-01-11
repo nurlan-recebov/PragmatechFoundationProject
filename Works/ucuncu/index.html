@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .btn{
+            display: flex;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .sol button{
+            width:200px ;
+            height:200px ;
+            background-color: blueviolet;
+            color: white;
+            position: relative;
+            border: 2px solid white;
+        }
+        .asagi button{
+            width:200px ;
+            height:200px ;
+            background-color: yellow;
+            color: white;
+            
+            border: 2px solid white;
+        }
+        .yuxari button{
+            width:200px ;
+            height:200px ;
+            background-color: red;
+            color: white;
+            
+            border: 2px solid white;
+        }
+        .sag button{
+            width:200px ;
+            height:200px ;
+            background-color: green;
+            color: white;
+            
+            border: 2px solid white;
+        }
+        .qutu{
+            width: 50px;
+            height: 50px;
+            background-color: purple ;
+            border-radius: 50%;
+            position: absolute;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <div id="sol" class="sol"><button>sol</button></div>
+        <div id="asagi" class="asagi"><button>asagi</button></div>
+        <div id="yuxari" class="yuxari"> <button>Yuxari</button></div>
+        <div id="sag" class="sag"><button>sag</button></div>
+    </div>
+    <div id="qutu" class="qutu"></div>
+    <script>
+        document.getElementById("sag").onclick=function(){
+            document.getElementById("qutu").style.left = window.innerWidth-300 +"px"
+            document.getElementById("qutu").style.background ="pink"
+            document.getElementById("qutu").style.width= "300px"
+            document.getElementById("qutu").style.height= "300px"
+        }
+        document.getElementById("sol").onclick=function(){
+            document.getElementById("qutu").style.left="0px"
+            document.getElementById("qutu").style.background = "white"
+            document.getElementById("qutu").style.width= "50px"
+            document.getElementById("qutu").style.height= "50px"
+        }
+        document.getElementById("asagi").onclick=function(){
+            document.getElementById("qutu").style.top=window.innerHeight-300 +"px"
+            document.getElementById("qutu").style.width= "300px"
+            document.getElementById("qutu").style.height= "300px"
+        }
+        document.getElementById("yuxari").onclick=function(){
+            document.getElementById("qutu").style.top="0px"
+            document.getElementById("qutu").style.width= "50px"
+            document.getElementById("qutu").style.height= "50px"
+        }
+    </script>
+
+
+</body>
+</html>

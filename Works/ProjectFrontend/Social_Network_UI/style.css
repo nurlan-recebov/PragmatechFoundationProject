@@ -1,0 +1,79 @@
+body{
+    
+}
+.header{
+
+background-color: palevioletred;
+text-align: center;
+
+
+}
+.mains{
+    position: relative;
+    
+}
+.header1{
+    border-bottom: solid 1px orangered;
+    margin-left: -410px;
+}
+.header2{
+    
+    margin-left: -500px;
+}
+.container2{
+    background-image: url(https://roost.nbcuni.com/bin/viewasset.html/content/dam/Peacock/Campaign/landingpages/library/theoffice/mainpage/office-social-min.png/_jcr_content/renditions/original) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+inh3}
+.main{
+    margin-left: 100px;
+}
+.main h2{
+    color: white;
+}
+.main h3{
+    color: white;
+}
+.container input{
+    width: 300px;
+    height: 200px;
+    border-bottom: 1px solid blue;
+    
+}
+.teams{
+    background-color: white;
+    width: 310px;
+    position: relative;
+    margin-top: -21px;
+}
+.teams h4{
+    color: blue;
+
+}
+.teamiki{
+    display: flex;
+    justify-content: space-around;
+}
+.teams{
+    
+    text-align: center;
+}
+.dots {
+    display: flex;
+position: relative;
+    color: white;
+    margin-left: 150px;
+
+    
+}
+.dots p{
+    font-size: xx-large;
+}
+.icons i{
+    color: white;
+    font-size: 15px;
+}

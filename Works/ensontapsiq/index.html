@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+  padding:10px 20px;
+  position: relative;
+}
+.box{
+  width:400px;
+  height:300px;
+  background:red;
+  display: none;
+  position: absolute;
+}
+.show {display:block;}
+
+    </style>
+</head>
+<body>
+    <button id="mybutton"> Create New Element</button>
+    <div id="mybox" class="box"></div>
+    <script>
+document.getElementById("mybutton").onclick=function(){
+    document.getElementById("mybox").classList.toggle("show")
+}
+    </script>
+</body>
+</html>
