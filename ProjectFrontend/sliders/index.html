@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 1200px; 
+        margin: 0 auto;   
+        overflow: hidden;
+    }
+    .app {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px solid red; 
+    width: calc(6*(1200px/2));
+    position: absolute;
+    left: 0px;
+    transition: all .3s linear;
+    }
+
+    body {
+        /* position: relative; */
+        background-color: aqua;
+    }
+
+    .buttb {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+    }
+
+    .bir,.iki {
+        display: flex;
+    }
+.iki{
+    
+}
+
+    .butti {
+        width: 50px;
+        height: 50px;
+        background-color: yellowgreen;
+
+    }
+
+    .butt {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .sari {
+    
+        height: 200px;
+        background-color: yellow;
+    }
+
+     .qirmizi {
+        
+        height: 200px;
+        background-color: red;
+    }
+
+    .yasil {
+        
+        height: 200px;
+        background-color: #14ff14;
+    }
+
+    .mavi {
+        
+        height: 200px;
+        background-color: blue;
+    }
+.bir div{
+    width: calc(1200px / 2 - 20px);
+    margin: 10px;
+    font-size: 3em
+}
+</style>
+
+<body>
+    <div  id="con" class="container">
+        <div   class="app">
+            <div class="bir">
+                <div class="sari"></div>
+                <div class="qirmizi"></div>
+                <div class="yasil"></div>
+                <div class="mavi"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    </div>
+    <div id="butt" class="butt">
+        <div class="buttb" id="buttb"> <button></button></div>
+        <div id="butti" class="butti"> <button></button></div>
+    </div>
+
+
+    <script>
+        document.getElementById('buttb').onclick = function () {
+            document.getElementById('con').style.transform = "translateX(-1200px)";
+        }
+        document.getElementById('butti').onclick = function () {
+            document.getElementById('con').style.transform = "translateX(0px)";
+        }
+    </script> 
+</body>
+
+</html>
