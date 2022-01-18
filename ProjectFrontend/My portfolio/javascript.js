@@ -3,16 +3,34 @@
 // btn.onclick=function(){
 //     slide.style.transform="translateX(800px)";
 // }
-let button = document.querySelector("#up")
-let right = document.querySelector(".right")
-let shadow = document.querySelector(".shadow")
+let button = document.getElementById("btn-back-to-top");
 
-button.addEventListener('click',()=>{
-    
+window.onscroll = function() {
+    scrollFunction();
+};
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    
-})
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 600 ||
+        document.documentElement.scrollTop > 600
+    ) {
+        button.style.display = "block";
+        button.style.zIndex = "99"
+    } else {
+        button.style.display = "none";
+        button.style.zIndex = "-1"
+
+    }
+}
+
+button.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+  
 
 
 

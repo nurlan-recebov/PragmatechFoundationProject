@@ -1,11 +1,14 @@
-let b = 0
+var b = 0
 
 function eded() {
     b++
-    if (b <= 3000) {
+    if (b <= 300) {
         console.log(b);
         eded()
     }
 
 }
+
+
+
 eded()
