@@ -124,7 +124,9 @@ def hosts():
 @app.route('/',methods=['GET','POST'])
 def add(): 
   return render_template('index.html')
+istifadeciler=[]
 @app.route('/users',methods=['GET','POST'])
+
 def users(): 
   if request.method=='POST':
     _ad=request.form['ad']

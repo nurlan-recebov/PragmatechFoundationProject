@@ -23,7 +23,7 @@
         <div class="container">
             <div class="right">
                 <div class="img">
-                    <img src="../static/image/n1.jpg" alt="">
+                    <img src="image/n1.jpg" alt="">
                     <div>
                         <h1>Nurlan Cahangirov</h1>
                     </div>
@@ -137,32 +137,6 @@
                             </div>
                         </form>
                     </div>
-                    <table class="table">
-
-                        <tr>
-                            <th scope="col">Sekil</th>
-                            <th scope="col">Ad</th>
-                            <th scope="col">Paragraf</th>
-
-                        </tr>
-
-
-                        {% for istifadeci in users %}
-                        <tr>
-                            <td>{{istifadeci['Sekil']}}</td>
-                            <td>{{istifadeci['ad']}}</td>
-                            <td>{{istifadeci['paragraf']}}</td>
-
-
-                            <td>
-
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-                        {% endfor %}
-
-
-                    </table>
 
                 </div>
 
@@ -185,67 +159,37 @@
             <div class="arxa">SUMMARY</div>
             <h1>Resume</h1>
             <div class="span"> <span></span></div>
-            <div class="center">
-                <div class="movcud">
+            <div class="movcud">
 
-                    <div class="ikinc ">
-                        <div class="send ">
-                            <p>SEND US A NOTE</p>
-                        </div>
-                        <div class="soninput ">
-                            <form action="/users" method="POST">
-                                <div class="labelinput ">
-                                    <input type="date" placeholder="Date" name="date">
-                                    <input type="text " placeholder="Ixtisas" name='Ad'>
-                                    <input type="text " placeholder="Universtetin adi" name='ad'>
-                                    <input type="text " placeholder="Paragraf" name='Paragraf'>
-                                </div>
+                <div class="ikinc ">
+                    <div class="send ">
+                        <p>SEND US A NOTE</p>
+                    </div>
+                    <div class="soninput ">
+                        <form action="/users" method="POST">
+                            <div class="labelinput ">
+                                <input type="date" placeholder="Date" name="date">
+                                <input type="text " placeholder="Ixtisas" name='ad'>
+                                <input type="text " placeholder="Universtetin adi" name='ad'>
+                                <input type="text " placeholder="Paragraf" name='Paragraf'>
+                            </div>
 
-                                <div>
-                                    <div class="button1 "> <button type="submit ">
+                            <div>
+                                <div class="button1 "> <button type="submit ">
                                     <p>Gonder</p>
                                 </button></div>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
-                    <table class="table">
 
-                        <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Ixtisasadi</th>
-                            <th scope="col">Universtetadi</th>
-                            <th scope="col">Haqqinda</th>
-                        </tr>
-
-
-                        {% for istifadeci in users %}
-                        <tr>
-                            <td>{{istifadeci['Date']}}</td>
-                            <td>{{istifadeci['Ixtisas']}}</td>
-                            <td>{{istifadeci['Universtet']}}</td>
-                            <td>{{istifadeci['Haqqinda']}}</td>
-
-                            <td>
-
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-                        {% endfor %}
-
-
-                    </table>
                 </div>
-
 
 
             </div>
         </div>
-
-        </div>
         </div>
 
-        </div>
+
         </div>
 
     </section>
@@ -262,7 +206,7 @@
                         <p>SEND US A NOTE</p>
                     </div>
                     <div class="soninput ">
-                        <form action="/" method="POST">
+                        <form action="/users" method="POST">
                             <div class="labelinput ">
                                 <label for="img"><p>Select image:</p></label>
                                 <input type="file" id="img" name="img" accept="image/*">
@@ -278,34 +222,8 @@
                     </div>
 
                 </div>
-                <table class="table">
 
-                    <tr>
-                        <th scope="col">Seklin adi</th>
-                        <th scope="col">Sekil</th>
-
-
-                    </tr>
-
-
-                    {% for istifadeci in users %}
-                    <tr>
-                        <td>{{istifadeci['Seklinadi']}}</td>
-                        <td>{{istifadeci['Sekil']}}</td>
-
-
-
-                        <td>
-
-                            <a href=""><i class="fas fa-trash-alt"></i></a>
-                        </td>
-                    </tr>
-                    {% endfor %}
-
-
-                </table>
             </div>
-
 
         </div>
     </section>
@@ -337,33 +255,6 @@
                             </div>
                         </form>
                     </div>
-                    <table class="table">
-
-                        <tr>
-                            <th scope="col">Seklinadi</th>
-                            <th scope="col">Ad</th>
-                            <th scope="col">Adress</th>
-                            <th scope="col">Paragraf</th>
-
-                        </tr>
-
-
-                        {% for istifadeci in users %}
-                        <tr>
-                            <td>{{istifadeci['Seklinadi']}}</td>
-                            <td>{{istifadeci['ad']}}</td>
-                            <td>{{istifadeci['Adress']}}</td>
-                            <td>{{istifadeci['Paragraf']}}</td>
-
-                            <td>
-
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-                        {% endfor %}
-
-
-                    </table>
 
                 </div>
 
@@ -388,32 +279,31 @@
                     <div class="row">
                         <div class="col-md-12">
                             <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Surname</th>
+                                        <th scope="col">Textarea</th>
 
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Surname</th>
-                                    <th scope="col">Textarea</th>
-
-                                </tr>
-
-
-                                {% for istifadeci in users %}
-                                <tr>
-                                    <td>{{istifadeci['ad']}}</td>
-                                    <td>{{istifadeci['soyad']}}</td>
-                                    <td>{{istifadeci['textarea']}}</td>
-
-
-                                    <td>
-
-                                        <a href=""><i class="fas fa-trash-alt"></i></a>
-                                    </td>
-                                </tr>
-                                {% endfor %}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for istifadeci in users %}
+                                    <tr>
+                                        <td>{{istifadeci['ad']}}</td>
+                                        <td>{{istifadeci['soyad']}}</td>
+                                        <td>{{istifadeci['textarea']}}</td>
 
 
+                                        <td>
+                                            <a href=""><i class="fas fa-edit"></i></a>
+                                            <a href=""><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+
+                                </tbody>
                             </table>
-
                         </div>
                     </div>
                 </div>

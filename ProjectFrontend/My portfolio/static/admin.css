@@ -1,0 +1,724 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {}
+
+#WhatIdo {
+    height: 650px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    width: calc(100%-250px);
+}
+
+.right {
+    width: 250px;
+    height: 100vh;
+    background-color: #111418;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    position: fixed;
+}
+
+.tammenyu {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.right img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 10px solid grey;
+    margin-top: 35px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.menyu ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.menyu ul li {
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.img h1 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.icons {
+    color: white;
+}
+
+.icons ul i {
+    margin-right: 5px;
+}
+
+.left {
+    position: relative;
+    background-image: url(image/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(100% - 250px);
+    height: 625px;
+    top: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    margin-left: 250px;
+}
+
+.bir {
+    position: absolute;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.left h1 {
+    font-size: 50px;
+}
+
+.left button {
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 2px solid #20c997;
+    color: #20c997;
+    cursor: grab;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.shadow {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+
+/*  ikinci section  start*/
+
+#About-Me {
+    width: calc(100%-250px);
+    height: 700px;
+}
+
+.container1 {
+    width: calc(100%-250px);
+    height: 100%;
+    border: 1px solid black;
+    background-color: #212529;
+    margin-left: 248px;
+    width: calc(100% - 250px);
+    text-align: center;
+    position: relative;
+}
+
+.arxa {
+    font-size: 7em;
+    font-family: "Poppins", sans-serif;
+    color: #495057;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+    font-style: bold;
+}
+
+
+/* .test  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+} */
+
+.span {
+    background-color: turquoise;
+    text-align: center;
+    height: 3px;
+    width: 90px;
+    margin-left: 440px;
+    position: relative;
+    margin-top: 12px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+.shadow1 {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.99);
+}
+
+.container1 h1 {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 140px;
+    position: relative;
+    text-align: center;
+}
+
+.yazi {
+    display: flex;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.yazi .ad {
+    color: turquoise;
+}
+
+.paragraf {
+    color: #ced4da;
+    width: 480px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bolum {
+    display: flex;
+    margin-top: 80px;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.inputs input {
+    background: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    border: none;
+    width: 350px;
+    font-size: 1.2em;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+
+.inputs button {
+    background-color: turquoise;
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    border-bottom: none;
+}
+
+.button p {
+    color: white;
+    list-style-type: none;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.button a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* section 3 start */
+
+#WhatIdo {
+    height: 1100px;
+    width: calc(100%-250px);
+    background-color: #343a40 !important;
+}
+
+#Resume {
+    height: 1100px;
+    width: calc(100%-250px);
+}
+
+#Portfolio {
+    width: calc(100%-250px);
+    height: 1100px;
+}
+
+#Testimonial {
+    width: calc(100%-250px);
+    height: 1100px;
+}
+
+#Contact {
+    width: calc(100%-250px);
+    height: 1100px;
+}
+
+.tam {
+    display: flex;
+}
+
+.bolum {
+    display: flex;
+}
+
+.tam .icon {
+    font-size: 35px;
+    color: turquoise;
+    width: 20%;
+    height: 20%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #202020;
+    margin-left: 30px;
+    /* margin-top: 50px; */
+    margin-right: 5px;
+}
+
+.tam h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+}
+
+.tam p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.movcud {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.movcud h2 {
+    color: white;
+}
+
+.qutu1 {
+    color: white;
+    background-color: tomato;
+    width: 100px;
+    margin-left: 210px;
+    border-radius: 5px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.movcud h3 {
+    color: turquoise;
+}
+
+.movcud .p {
+    color: rgba(255, 255, 255, .5)!important;
+    font-family: "Poppins", sans-serif;
+}
+
+.qutu {
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* section portfolio */
+
+.photo ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+.photo {
+    margin-top: 50px;
+}
+
+.photo li:nth-child(1) {
+    border-bottom: 2px solid turquoise;
+}
+
+.resim img {
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
+}
+
+.resim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clents {
+    display: flex;
+    margin-top: 40px;
+}
+
+.cle1 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.cle1 img {
+    border-radius: 55%;
+    margin-left: 20px;
+    width: 20%;
+    height: 20%;
+}
+
+.cle1 h2 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin-left: 10px;
+}
+
+.cle1 h3 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, .5)!important;
+    margin-left: 10px;
+}
+
+.clents p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 270px;
+    margin-left: 90px;
+}
+
+.stars ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 150px;
+}
+
+.clients {}
+
+.stars ul li i {
+    color: yellow;
+}
+
+.ha {
+    background-color: blueviolet;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.ha1 {
+    margin-top: 20px;
+    background-color: green;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.adress {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-left: -90px;
+}
+
+.adress h2 {
+    margin-left: -130px;
+}
+
+.nomre {
+    display: flex;
+}
+
+.mail {
+    display: flex;
+}
+
+.Tam {
+    width: 300px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.nomre i {
+    color: turquoise;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.mail i {
+    color: turquoise;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.nomre h4 {
+    margin-left: 20px;
+    color: white;
+}
+
+.mail h4 {
+    margin-left: 20px;
+    color: white;
+}
+
+.Fol h2 {
+    color: white;
+}
+
+.Fol i {
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.Fol ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.Fol {
+    margin-left: -150px;
+}
+
+.Fol ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.complete {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.send p {
+    color: rgba(250, 250, 250, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3125rem !important;
+}
+
+.soninput {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.resim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resim p {
+    color: aliceblue;
+}
+
+.tam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelinput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movcud {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 h4 {
+    color: aliceblue;
+}
+
+.clents {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clents p {
+    color: #ced4da;
+}
+
+.labelinput input {
+    margin-bottom: 30px;
+}
+
+.soninput input {
+    background: none;
+    border: none;
+    width: 270px;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    background-color: #202020;
+    padding-left: 20px;
+}
+
+.textarea textarea {
+    font-family: "Poppins", sans-serif;
+    background-color: #202020;
+    border: none;
+    margin-left: 0px;
+    width: 630px;
+    height: 150px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.ikinc {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button1 button {
+    border-radius: 30px;
+    background-color: turquoise;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #495057;
+    cursor: grab;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-top: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.button1 a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#Contact table {
+    width: 300px;
+}
+
+.button1 p {
+    background: none;
+    color: white;
+    border: none;
+    text-decoration: none;
+    background-color: none;
+    font-family: "Poppins", sans-serif;
+}
+
+#end {
+    height: 120px;
+    width: calc(100%-250px);
+    background-color: #111418 !important;
+}
+
+.endd {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 60px;
+}
+
+.end1 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.Nurlan {
+    color: turquoise;
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    padding: 25px;
+}
+
+table {}
+
+.end2 {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin-right: 40px;
+}
