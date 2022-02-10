@@ -58,7 +58,7 @@
                 </div>
                 <div class="bir">
                     <h2>Welcome</h2>
-                    <h1>My Admin Panel</h1>
+                    <h1>Admin Nurlan Cahangirov</h1>
                     <h3>based in Baku</h3>
                     <button>
                         <h3>Hire me</h3>
@@ -122,12 +122,12 @@
                         <p>SEND US A NOTE</p>
                     </div>
                     <div class="soninput ">
-                        <form action="/users" method="POST">
+                        <form action="/admin" method="POST" enctype="multipart/form-data">
                             <div class="labelinput ">
                                 <label for="img"><p>Select image:</p></label>
-                                <input type="file" id="img" name="img" accept="image/*">
+                                <input type="file" id="img" name="sekil" accept="image/*">
                                 <input type="text " placeholder="Ad" name='ad'>
-                                <input type="text " placeholder="Paragraf" name='Paragraf'>
+                                <input type="text " placeholder="Paragraf" name='paragraf'>
                             </div>
 
                             <div>
@@ -139,24 +139,33 @@
                     </div>
                     <table class="table">
 
+
+
+
                         <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Sekil</th>
-                            <th scope="col">Ad</th>
+                            <th scope="col">AD</th>
                             <th scope="col">Paragraf</th>
+                            <th scope="col">Tarix</th>
+                            <th scope="col">Actions</th>
 
                         </tr>
 
 
-                        {% for istifadeci in users %}
+                        {% for xeber in xeberler %}
                         <tr>
-                            <td>{{istifadeci['Sekil']}}</td>
-                            <td>{{istifadeci['ad']}}</td>
-                            <td>{{istifadeci['paragraf']}}</td>
-
+                            <td>{{xeber.n_id}}</td>
+                            <td>
+                                <img src="../static/uploads/{{xeber.n_img}}" alt="" class="img-thumbnail" style="width: 100px;">
+                            </td>
+                            <td>{{xeber.n_ad}}</td>
+                            <td>{{xeber.n_paragraf}}</td>
+                            <td>{{xeber.n_date}}</td>
 
                             <td>
 
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
+                                <a href="/admin/delete/{{xeber.n_id}}"><i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
                         {% endfor %}

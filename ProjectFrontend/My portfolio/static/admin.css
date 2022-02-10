@@ -9,7 +9,7 @@ html {
 @media only screen and (max-width: 768px) {}
 
 #WhatIdo {
-    height: 650px;
+    height: 1000px;
     max-width: 100%;
 }
 
@@ -45,10 +45,10 @@ html {
     height: 150px;
     border: 10px solid grey;
     margin-top: 35px;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .menyu ul li a {
@@ -104,7 +104,29 @@ html {
 }
 
 .left h1 {
-    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    animation: animate 3s linear infinite;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
 }
 
 .left button {

@@ -145,14 +145,14 @@
                 <h1>What I Do?</h1>
                 <div class="span"> <span></span></div>
                 <div class="tam">
-                    {% for single in allnews %}
+                    {% for xeber in xeberler %}
                     <div class="bolum">
-                        <div class="icon">
-                            <i class='{{single.icon}}'></i>
+                        <div>
+                            <img src="../static/uploads/{{xeber.n_img}}" alt="" style="width: 100px;">
                         </div>
                         <div>
-                            <h2>{{single.title}}</h2>
-                            <p>{{single.detail}}</p>
+                            <h2>{{xeber.n_ad}}</h2>
+                            <p>{{xeber.n_paragraf}}</p>
                         </div>
                     </div>
                     {% endfor %}
