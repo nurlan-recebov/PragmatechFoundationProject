@@ -202,12 +202,12 @@
                             <p>SEND US A NOTE</p>
                         </div>
                         <div class="soninput ">
-                            <form action="/users" method="POST">
+                            <form action="/nurlan" method="POST" enctype="multipart/form-data">
                                 <div class="labelinput ">
                                     <input type="date" placeholder="Date" name="date">
-                                    <input type="text " placeholder="Ixtisas" name='Ad'>
-                                    <input type="text " placeholder="Universtetin adi" name='ad'>
-                                    <input type="text " placeholder="Paragraf" name='Paragraf'>
+                                    <input type="text " placeholder="Ixtisas" name='ixtisas'>
+                                    <input type="text " placeholder="Universtetin adi" name='universtet'>
+                                    <input type="text " placeholder="Paragraf" name='haqqinda'>
                                 </div>
 
                                 <div>
@@ -225,19 +225,22 @@
                             <th scope="col">Ixtisasadi</th>
                             <th scope="col">Universtetadi</th>
                             <th scope="col">Haqqinda</th>
+                            <th scope="col">Actions</th>
                         </tr>
 
 
-                        {% for istifadeci in users %}
+                        {% for task in tasklar %}
                         <tr>
-                            <td>{{istifadeci['Date']}}</td>
-                            <td>{{istifadeci['Ixtisas']}}</td>
-                            <td>{{istifadeci['Universtet']}}</td>
-                            <td>{{istifadeci['Haqqinda']}}</td>
+                            <td>{{task.n_id}}</td>
+
+                            <td>{{task.n_date}}</td>
+                            <td>{{task.n_ixtisas}}</td>
+                            <td>{{task.n_universtet}}</td>
+                            <td>{{task.n_haqqinda}}</td>
 
                             <td>
 
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
+                                <a href="/nurlan/delete/{{task.n_id}}"><i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
                         {% endfor %}
@@ -271,10 +274,11 @@
                         <p>SEND US A NOTE</p>
                     </div>
                     <div class="soninput ">
-                        <form action="/" method="POST">
+                        <form action="/cahan" method="POST" enctype="multipart/form-data">
                             <div class="labelinput ">
                                 <label for="img"><p>Select image:</p></label>
                                 <input type="file" id="img" name="img" accept="image/*">
+
 
                             </div>
 
@@ -290,23 +294,28 @@
                 <table class="table">
 
                     <tr>
-                        <th scope="col">Seklin adi</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Sekil</th>
+                        <th scope="col">Tarix</th>
+
 
 
                     </tr>
 
 
-                    {% for istifadeci in users %}
+                    {% for emr in emrler %}
                     <tr>
-                        <td>{{istifadeci['Seklinadi']}}</td>
-                        <td>{{istifadeci['Sekil']}}</td>
+                        <td>{{emr.n_id}}</td>
+                        <td>
+                            <img src="../static/uploads/{{emr.n_img}}" alt="" class="img-thumbnail" style="width: 100px;">
+                        </td>
 
 
+                        <td>{{emr.n_date}}</td>
 
                         <td>
 
-                            <a href=""><i class="fas fa-trash-alt"></i></a>
+                            <a href="/cahan/delete/{{emr.n_id}}"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
                     {% endfor %}
@@ -330,13 +339,13 @@
                         <p>SEND US A NOTE</p>
                     </div>
                     <div class="soninput ">
-                        <form action="/users" method="POST">
+                        <form action="/girov" method="POST" enctype="multipart/form-data">
                             <div class="labelinput ">
                                 <label for="img"><p>Select image:</p></label>
                                 <input type="file" id="img" name="img" accept="image/*">
                                 <input type="text " placeholder="Ad" name='ad'>
-                                <input type="text " placeholder="Adress" name='Adress'>
-                                <input type="text " placeholder="Paragraf" name='Paragraf'>
+                                <input type="text " placeholder="Adress" name='adress'>
+                                <input type="text " placeholder="Paragraf" name='paragraf'>
                             </div>
 
                             <div>
@@ -349,27 +358,37 @@
                     <table class="table">
 
                         <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Seklinadi</th>
                             <th scope="col">Ad</th>
                             <th scope="col">Adress</th>
                             <th scope="col">Paragraf</th>
+                            <th scope="col">Tarix</th>
+                            <th scope="col">Actions</th>
+
 
                         </tr>
 
 
-                        {% for istifadeci in users %}
+                        {% for test in testler %}
                         <tr>
-                            <td>{{istifadeci['Seklinadi']}}</td>
-                            <td>{{istifadeci['ad']}}</td>
-                            <td>{{istifadeci['Adress']}}</td>
-                            <td>{{istifadeci['Paragraf']}}</td>
+                            <td>{{test.n_id}}</td>
+                            <td>
+                                <img src="../static/uploads/{{test.n_img}}" alt="" class="img-thumbnail" style="width: 100px;">
+                            </td>
+                            <td>{{test.n_ad}}</td>
+                            <td>{{test.n_adress}}</td>
+                            <td>{{test.n_paragraf}}</td>
+                            <td>{{test.n_date}}</td>
 
                             <td>
 
-                                <a href=""><i class="fas fa-trash-alt"></i></a>
+                                <a href="/girov/delete/{{test.n_id}}"><i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
                         {% endfor %}
+
+
 
 
                     </table>

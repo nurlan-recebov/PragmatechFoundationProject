@@ -147,8 +147,8 @@
                 <div class="tam">
                     {% for xeber in xeberler %}
                     <div class="bolum">
-                        <div>
-                            <img src="../static/uploads/{{xeber.n_img}}" alt="" style="width: 100px;">
+                        <div class="uploads">
+                            <img src="../static/uploads/{{xeber.n_img}}" alt="" style="width: 200px;">
                         </div>
                         <div>
                             <h2>{{xeber.n_ad}}</h2>
@@ -184,18 +184,18 @@
                 <h1>Resume</h1>
                 <div class="span "> <span></span></div>
                 <div class="movcud ">
-                    <h2>My Education</h2>
+
 
                     <div class=" ">
 
 
                         <div class="one ">
-                            {% for single in allboxs %}
+                            {% for task in tasklar %}
                             <div class="qutu ">
-                                <span>{{single.year}}</span>
-                                <h2>{{single.skill}}</h2>
-                                <h3>{{single.universty}}</h3>
-                                <p>{{single.detail}}</p>
+                                <span>{{task.n_date}}</span>
+                                <h2>{{task.n_ixtisas}}</h2>
+                                <h3>{{task.n_universtet}}</h3>
+                                <p>{{task.n_haqqinda}}</p>
                             </div>
                             {% endfor %}
 
@@ -241,9 +241,8 @@
                 <div class="resimler">
 
                     <div class="resim ">
-                        {% for sekil in images %}
-                        <div><img src="{{sekil['ad']}}" alt=" "></div>
-
+                        {% for emr in emrler %}
+                        <div> <img src="../static/uploads/{{emr.n_img}}" alt=""></div>
                         {% endfor %}
                     </div>
 
@@ -262,22 +261,22 @@
                 <div class="span "> <span></span></div>
                 <div id="slide " class="clents ">
                     <div id="slider1 " class="client ">
-                        {% for single in allcomments %}
+                        {% for test in testler %}
                         <div class="ha ">
                             <div class="cle1 ">
-                                <img src="{{single.img}} " alt=" ">
+                                <img src="../static/uploads/{{test.n_img}}" alt="">
                                 <div>
-                                    <h2>{{single.name}}</h2>
-                                    <h3>{{single.adress}}</h3>
+                                    <h2>{{test.n_ad}}</h2>
+                                    <h3>{{test.n_adress}}</h3>
                                 </div>
                             </div>
-                            <p>{{single.paragraf}}</p>
-                            <div class="stars ">
+                            <p>{{test.n_paragraf}}</p>
+                            <!-- <div class="stars ">
                                 <ul>
-                                    <li><i class="{{single.icon}}"></i></li>
+                                    <li><i class=""></i></li>
 
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                         {% endfor %}
 

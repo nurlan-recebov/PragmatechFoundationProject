@@ -9,7 +9,7 @@ html {
 @media only screen and (max-width: 768px) {}
 
 #WhatIdo {
-    height: 1000px;
+    height: 1500px;
     max-width: 100%;
 }
 
@@ -276,29 +276,29 @@ html {
 /* section 3 start */
 
 #WhatIdo {
-    height: 1100px;
+    height: 1500px;
     width: calc(100%-250px);
     background-color: #343a40 !important;
 }
 
 #Resume {
-    height: 1100px;
+    height: 1500px;
     width: calc(100%-250px);
 }
 
 #Portfolio {
     width: calc(100%-250px);
-    height: 1100px;
+    height: 1500px;
 }
 
 #Testimonial {
     width: calc(100%-250px);
-    height: 1100px;
+    height: 1500px;
 }
 
 #Contact {
     width: calc(100%-250px);
-    height: 1100px;
+    height: 1500px;
 }
 
 .tam {
