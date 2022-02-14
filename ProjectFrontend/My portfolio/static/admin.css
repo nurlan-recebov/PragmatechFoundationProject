@@ -307,6 +307,7 @@ html {
 
 .bolum {
     display: flex;
+    justify-content: space-around;
 }
 
 .tam .icon {

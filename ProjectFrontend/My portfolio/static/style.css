@@ -11,7 +11,6 @@ body {
 
 #Home {
     background-color: #111418;
-    ;
 }
 
 #About-Me {
@@ -371,11 +370,21 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.bolum {
+.bolumm {
     display: flex;
     margin-top: 80px;
     margin-left: 20px;
     justify-content: space-around;
+}
+
+.xeber-item h2 {
+    color: turquoise;
+}
+
+.bolum {
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-bottom: 90px;
 }
 
 .inputs input {
@@ -401,10 +410,11 @@ html {
     text-decoration: none;
     list-style-type: none;
     border-bottom: none;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    margin-bottom: 30px;
 }
 
 .button p {
@@ -450,10 +460,6 @@ html {
     margin-left: 40px;
 }
 
-.bolum {
-    display: flex;
-}
-
 .tam .icon i {
     font-size: 80px;
     color: turquoise;
@@ -472,10 +478,10 @@ html {
     color: white;
     font-family: "Roboto", sans-serif;
     margin-top: 1%;
+    font-weight: 400;
 }
 
 .tam p {
-    width: 399px;
     font-family: "Roboto", sans-serif;
     color: white;
 }
@@ -492,7 +498,8 @@ html {
 }
 
 .movcud h2 {
-    color: white;
+    color: peru;
+    font-weight: 300;
 }
 
 .qutu span {
@@ -510,8 +517,16 @@ html {
     color: white;
 }
 
+.qutu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .movcud h3 {
     color: turquoise;
+    font-weight: 400;
 }
 
 .movcud .p {
@@ -601,12 +616,15 @@ html {
     font-family: "Poppins", sans-serif;
     border: none;
     margin-left: 10px;
+    font-weight: 500;
+    color: turquoise;
 }
 
 .cle1 h3 {
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.5) !important;
     margin-left: 10px;
+    font-weight: 400;
 }
 
 .clents p {
@@ -629,11 +647,12 @@ html {
 .ha {
     background-color: #111418;
     width: 460px;
-    height: 440px;
+    height: 340px;
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .client {
