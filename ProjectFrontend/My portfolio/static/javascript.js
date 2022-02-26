@@ -33,3 +33,7 @@ function backToTop() {
 function myFunction() {
     document.getElementById("menu").style.display = "block";
 }
+
+function nurlan() {
+    document.getElementById("menu").style.display = "none";
+}
