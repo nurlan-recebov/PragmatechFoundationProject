@@ -79,7 +79,7 @@ html {
 
 .left {
     position: relative;
-    background-image: url(image/back.jpg);
+    background-image: url(../static/image/slider3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: calc(100% - 250px);
