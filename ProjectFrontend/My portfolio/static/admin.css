@@ -288,7 +288,7 @@ html {
 
 #Portfolio {
     width: calc(100%-250px);
-    height: 1500px;
+    max-height: 2500px;
 }
 
 #Testimonial {

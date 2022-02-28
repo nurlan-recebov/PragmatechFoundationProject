@@ -5,7 +5,7 @@
     }
     
     .container {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
     }
     
@@ -50,10 +50,14 @@
         max-width: 100%;
     }
     
+    .yuxari {
+        max-width: 100%;
+    }
+    
     .right {
-        width: 100%;
+        width: 100vw;
         height: 66px;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.8);
         justify-content: space-around;
         display: flex;
         align-items: center;
@@ -61,6 +65,14 @@
         top: 0px;
         position: fixed;
         color: white;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        /* .right {
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+        } */
     }
     
     .bars {
@@ -134,10 +146,10 @@
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        max-width: 100%;
         height: 680px;
         box-sizing: border-box;
-        background-image: url(../static/image/slider2.jpg);
+        background-image: url(../static/image/mac1.jpg);
         animation: slide 20s infinite;
         /*animation-fill-mode: forwards;
         */
@@ -166,7 +178,7 @@
     .menu ul {
         list-style-type: none;
         text-decoration: none;
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
     
     .menu ul li {
@@ -177,20 +189,20 @@
     
     .menu {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.6);
-        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100vw;
         height: 80vh;
-        z-index: 100;
-        top: 65px;
+        z-index: 1;
         display: none;
+        top: 65px;
     }
     
     .scroll-button button {
         position: fixed;
         bottom: 10px;
         right: 10px;
-        width: 36px;
-        height: 36px;
+        width: 2.6354319180087846vw;
+        height: 5.76vh;
         border-radius: 50%;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.301);
@@ -218,6 +230,7 @@
         height: 100%;
         color: #dee3e4;
         font-family: "Poppins", sans-serif;
+        text-align: center;
     }
     
     .bir p {
@@ -242,6 +255,8 @@
         -webkit-text-fill-color: transparent;
         -webkit-animation: animate 3s linear infinite;
     }
+    
+    .left {}
     
     @keyframes animate {
         0% {
@@ -398,14 +413,12 @@
     }
     
     .bolum {
-        width: 300px;
+        width: 400px;
         height: 400px;
         background-color: #111418;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
+        padding: 20px;
     }
     
     .bolum p {
@@ -465,7 +478,7 @@
     }
     
     #Portfolio {
-        max-height: 2500px !important;
+        max-height: 2800px !important;
     }
     
     #Testimonial {
@@ -482,7 +495,8 @@
         grid-template-rows: 50% 50%;
         place-items: center;
         gap: 30px;
-        margin-bottom: 30px;
+        margin-top: 70px;
+        margin-bottom: 20px;
     }
     
     .tam .icon i {
@@ -521,6 +535,8 @@
         display: grid;
         grid-template-columns: 50% 50%;
         place-items: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
     
     .movcud h2 {
@@ -597,8 +613,8 @@
     }
     
     .resim img {
-        width: 400px;
-        height: 340px;
+        width: 445px;
+        height: 400px;
         object-fit: cover;
     }
     
@@ -609,6 +625,8 @@
     
     .resimler {
         text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
     .clents {
@@ -632,6 +650,10 @@
         width: 20%;
         height: 20%;
         object-fit: cover;
+        -webkit-border-radius: 55%;
+        -moz-border-radius: 55%;
+        -ms-border-radius: 55%;
+        -o-border-radius: 55%;
     }
     
     .cle1 h2 {
@@ -684,6 +706,8 @@
         -moz-transition: 0, 5s ease;
         -ms-transition: 0, 5s ease;
         -o-transition: 0, 5s ease;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
     
     .ha1 {
@@ -691,7 +715,7 @@
         background-color: #111418;
         margin-left: 30px;
         margin-right: 30px;
-        text-align: cente;
+        text-align: center;
     }
     
     #slideriki {
@@ -854,7 +878,7 @@
         width: 150px;
         height: 50px;
         border: 1px solid #495057;
-        cursor: grab;
+        cursor: pointer;
         outline: none;
         box-sizing: border-box;
         text-decoration: none;
@@ -914,4 +938,55 @@
     
     .visibility {
         visibility: hidden;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .bolumm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .scroll-button button {
+            position: static;
+        }
+        .tam {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .resim {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .client {
+            display: flex;
+            flex-direction: column;
+            transition: 0, 5s ease;
+            -webkit-transition: 0, 5s ease;
+            -moz-transition: 0, 5s ease;
+            -ms-transition: 0, 5s ease;
+            -o-transition: 0, 5s ease;
+        }
+        .labelinput {
+            display: flex;
+            flex-direction: column;
+        }
+        form {
+            position: inherit;
+        }
+        .soninput input {
+            width: 356px;
+            margin-top: 10px;
+            height: 52px;
+        }
+        .textarea textarea {
+            width: 380px;
+            height: 148px;
+        }
+    }
+    
+    button {
+        cursor: pointer;
     }
