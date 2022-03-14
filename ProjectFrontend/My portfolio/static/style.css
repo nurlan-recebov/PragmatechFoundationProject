@@ -149,7 +149,7 @@
         max-width: 100%;
         height: 680px;
         box-sizing: border-box;
-        background-image: url(../static/image/mac1.jpg);
+        background-image: url(../static/image/mac2.jpg);
         animation: slide 20s infinite;
         /*animation-fill-mode: forwards;
         */
@@ -809,7 +809,7 @@
     }
     
     .Fol i {
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         margin-right: 6px;
         list-style-type: none;
@@ -964,10 +964,10 @@
             display: flex;
             flex-direction: column;
             transition: 0, 5s ease;
-            -webkit-transition: 0, 5s ease;
-            -moz-transition: 0, 5s ease;
-            -ms-transition: 0, 5s ease;
-            -o-transition: 0, 5s ease;
+            -webkit-transition: ;
+            -moz-transition: ;
+            -ms-transition: ;
+            -o-transition: ;
         }
         .labelinput {
             display: flex;
@@ -989,4 +989,105 @@
     
     button {
         cursor: pointer;
+    }
+    
+    .settings .setbtn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background-color: #111418;
+        z-index: 3;
+        position: fixed;
+        border-radius: 4px 0px 0px 4px;
+        -webkit-border-radius: 4px 0px 0px 4px;
+        -moz-border-radius: 4px 0px 0px 4px;
+        -ms-border-radius: 4px 0px 0px 4px;
+        -o-border-radius: 4px 0px 0px 4px;
+        outline: none;
+        text-decoration: none;
+        border: none;
+    }
+    
+    .settings {
+        position: absolute;
+        bottom: 300px;
+        right: 50px;
+        display: flex;
+        transition: 1s ease;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -ms-transition: 1s ease;
+        -o-transition: 1s ease;
+    }
+    
+    .settings .setbtn i {
+        font-size: 20px;
+        color: white;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .settings .setbtn:hover {
+        background-color: turquoise;
+    }
+    
+    .settings .sett {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        z-index: 3;
+        position: fixed;
+        margin-left: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        display: none;
+        text-align: center;
+    }
+    
+    .setcolors {
+        display: flex;
+    }
+    
+    .setcolor {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    
+    .setcolor:nth-child(2) {
+        background-color: purple;
+    }
+    
+    .setcolor:nth-child(3) {
+        background-color: green;
+    }
+    
+    .setbutton {
+        width: 160px;
+        height: 40px;
+        color: white;
+        background-color: turquoise;
+        border: none;
+    }
+    
+    .setcolor:hover {
+        width: 30px;
+        height: 30px;
+        transition: 1s all ease;
+        -webkit-transition: 1s all ease;
+        -moz-transition: 1s all ease;
+        -ms-transition: 1s all ease;
+        -o-transition: 1s all ease;
     }

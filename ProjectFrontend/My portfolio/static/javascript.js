@@ -37,3 +37,22 @@ function myFunction() {
 function nurlan() {
     document.getElementById("menu").style.display = "none";
 }
+
+function setbtn() {
+
+    document.getElementById("settings").style.right = "290px"
+    document.getElementById("setbt").disabled = true;
+
+    document.getElementById("sett").style.display = "block";
+}
+
+function seticon() {
+    document.getElementById("settings").style.right = "50px"
+    document.getElementById("sett").style.display = "block";
+
+}
+
+function purple() {
+    document.getElementsByClassName("arxa").style.backgroundColor = "purple"
+    document.getElementsByClassName("container").style.backgroundColor = "purple"
+}

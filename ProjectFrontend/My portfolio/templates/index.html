@@ -14,13 +14,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
 
 
+
+">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css
+
+
+
+    ">
 </head>
 
 <body>
 
+    <div id="settings" class="settings"><button id="setbt" onclick="setbtn()" class="setbtn"><i onclick="seticon()" class="fa-solid fa-gear"></i></button>
+        <div id="sett" class="sett">
+            <h2>Color Switcher</h2>
+            <div class="setcolors">
+                <div onclick="yellow()" class="setcolor"></div>
+                <div onclick="purple()" class="setcolor"></div>
+                <div onclick="green()" class="setcolor"></div>
 
+
+
+            </div>
+            <div><button class="setbutton">Reset Defalut Teal</button></div>
+        </div>
+    </div>
     <div class="scroll-button">
         <button type="button" id="btn-back-to-top"><i class="fas fa-chevron-up"></i></button>
     </div>
@@ -52,10 +73,9 @@
 
                     <div class="icons">
                         <ul>
-                            <li><i class="fab fa-facebook"></i></li>
-                            <li><i class="fab fa-twitter-square"></i></li>
-                            <li><i class="fas fa-basketball-ball"></i></li>
-                            <li><i class="fab fa-github-square"></i></li>
+                            <li><a href="https://wa.me/+994514170616"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="https://instagram.com/man_jahangiroff?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/nurlan-recebov"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
 
@@ -244,7 +264,9 @@
                             <div class="cle1 ">
                                 <img src="../static/uploads/{{test.n_img}}" alt="">
                                 <div>
-                                    <h2>{{test.n_ad}}</h2>
+                                    <a href="https://github.com/GulsenZalova">
+                                        <h2>{{test.n_ad}}</h2>
+                                    </a>
                                     <h3>{{test.n_adress}}</h3>
                                 </div>
                             </div>
@@ -291,10 +313,10 @@
                             <p>FOLLOW ME</p>
                             <ul>
                                 <li>
-                                    <i class="fab fa-facebook "></i>
-                                    <i class="fab fa-twitter-square "></i>
-                                    <i class="fas fa-basketball-ball "></i>
-                                    <i class="fab fa-github-square "></i>
+                                    <a href="https://wa.me/+994514170616"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com/man_jahangiroff?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i></a>
+
+                                    <a href="https://github.com/nurlan-recebov"><i class="fa-brands fa-github"></i></a>
                                 </li>
                             </ul>
                         </div>
