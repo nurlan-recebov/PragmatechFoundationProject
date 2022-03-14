@@ -41,7 +41,10 @@ function nurlan() {
 function setbtn() {
 
     document.getElementById("settings").style.right = "290px"
-    document.getElementById("setbt").disabled = true;
+
+
+
+
 
     document.getElementById("sett").style.display = "block";
 }
@@ -50,9 +53,31 @@ function seticon() {
     document.getElementById("settings").style.right = "50px"
     document.getElementById("sett").style.display = "block";
 
+    document.getElementById("setbtn").disabled = true;
 }
 
 function purple() {
-    document.getElementsByClassName("arxa").style.backgroundColor = "purple"
-    document.getElementsByClassName("container").style.backgroundColor = "purple"
+    const nodeList = document.querySelectorAll(".arxa,.container");
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "purple";
+    }
 }
+
+function yellow() {
+    const nodeList = document.querySelectorAll(".arxa,.container");
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.background = " #a337f6";
+    }
+}
+
+function green() {
+    const nodeList = document.querySelectorAll(".arxa,.container");
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "green";
+    }
+}
+// const element = document.getElementById("purple");
+
+// element.addEventListener("click", function() {
+//     document.querySelector('.arxa').style.backgroundColor = "purple"
+// });

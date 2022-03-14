@@ -1054,7 +1054,6 @@
     .setcolor {
         width: 50px;
         height: 50px;
-        background-color: yellow;
         border-radius: 50%;
         margin-left: 10px;
         margin-bottom: 10px;
@@ -1070,6 +1069,10 @@
         background-color: purple;
     }
     
+    .setcolor:nth-child(1) {
+        background: linear-gradient(90deg, #e84d70 0%, #a337f6 35%, #28a7ed 100%);
+    }
+    
     .setcolor:nth-child(3) {
         background-color: green;
     }
@@ -1081,8 +1084,7 @@
         background-color: turquoise;
         border: none;
     }
-    
-    .setcolor:hover {
+    /* .setcolor:hover {
         width: 30px;
         height: 30px;
         transition: 1s all ease;
@@ -1090,4 +1092,4 @@
         -moz-transition: 1s all ease;
         -ms-transition: 1s all ease;
         -o-transition: 1s all ease;
-    }
+    } */
