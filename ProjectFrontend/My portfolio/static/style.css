@@ -1020,6 +1020,10 @@
         -o-transition: 1s ease;
     }
     
+    .setshows {
+        right: 290px;
+    }
+    
     .settings .setbtn i {
         font-size: 20px;
         color: white;
@@ -1043,7 +1047,6 @@
         align-items: center;
         flex-direction: column;
         padding: 5px;
-        display: none;
         text-align: center;
     }
     

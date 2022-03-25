@@ -37,24 +37,37 @@ function myFunction() {
 function nurlan() {
     document.getElementById("menu").style.display = "none";
 }
-
-function setbtn() {
-
-    document.getElementById("settings").style.right = "290px"
+var title = document.getElementById("setbtn");
+title.classList.add("activate");
 
 
 
+// function setbtn() {
+
+//     document.getElementById("settings").style.right = "290px"
 
 
-    document.getElementById("sett").style.display = "block";
-}
 
-function seticon() {
-    document.getElementById("settings").style.right = "50px"
-    document.getElementById("sett").style.display = "block";
 
-    document.getElementById("setbtn").disabled = true;
-}
+
+//     document.getElementById("sett").style.display = "block";
+// }
+
+// function seticon() {
+//     document.getElementById("settings").style.right = "50px"
+//     document.getElementById("sett").style.display = "block";
+
+//     document.getElementById("setbtn").disabled = true;
+// }
+const link = document.querySelector('#settings');
+const setbtn = document.querySelector('#setbtn');
+setbtn.addEventListener("click", function() {
+    if (link.classList.contains("setshows")) {
+        link.classList.remove('setshows')
+    } else {
+        link.classList.add('setshows')
+    }
+});
 
 function purple() {
     const nodeList = document.querySelectorAll(".arxa,.container");
@@ -76,8 +89,16 @@ function green() {
         nodeList[i].style.backgroundColor = "green";
     }
 }
+
 // const element = document.getElementById("purple");
 
 // element.addEventListener("click", function() {
 //     document.querySelector('.arxa').style.backgroundColor = "purple"
 // });
+const navToggle = document.querySelectorAll('#setbtn');
+const links = document.querySelectorAll('#sett');
+navToggle.addEventListener("click", function() {
+    if (links.classList.contains('#sett')) {
+        links.classList.remove('#sett')
+    }
+});
